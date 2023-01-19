@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>코고 경품 구매 검색 도우미</h1>
+            <!-- URL 입력 -->
+            <div id="param-form">
+                <label>
+                    <span class="label-text">상한가</span>
+                    <input
+                        type="number"
+                        name="max_price"
+                        id="max_price"
+                        min="0"
+                        value="0"
+                    />
+                </label>
+                <label>
+                    <span class="label-text">하한가</span>
+                    <input
+                        type="number"
+                        name="min_price"
+                        id="min_price"
+                        min="0"
+                        value="0"
+                    />
+                </label>
+                <label>
+                    <span class="label-text">조회할 페이지 수</span>
+                    <input
+                        type="number"
+                        name="pagination"
+                        id="pagination"
+                        min="0"
+                        value="0"
+                    />
+                </label>
+                <button id="search-btn">검색하기</button>
+            </div>
+            <p id="page-description">
+                <span
+                    >포인트 상한가, 하한가를 입력하여 몇 포인트로 어떤 상품을
+                    구매할 수 있을지 알아볼 수 있습니다.</span
+                ><br />
+                <span>이 페이지는 데스크톱 화면에 최적화되어 있습니다.</span>
+            </p>
+        </header>
+        <article>
+            <h1>포인트 검색 결과</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>브랜드</th>
+                        <th>상품명</th>
+                        <th>포인트</th>
+                        <th>바로가기</th>
+                    </tr>
+                </thead>
+                <!-- 가져온 데이터가 칼럼별로 row별로 출력 -->
+                <tbody>
+                    <tr>
+                        <td>투썸플레이스</td>
+                        <td>아이스박스 패밀리</td>
+                        <td>42,350P</td>
+                        <td>
+                            <a href="https://cogo.co.kr/"> 링크 </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>투썸플레이스</td>
+                        <td>아이스박스 패밀리</td>
+                        <td>42,350P</td>
+                        <td>
+                            <a href="https://cogo.co.kr/"> 링크 </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>투썸플레이스</td>
+                        <td>아이스박스 패밀리</td>
+                        <td>42,350P</td>
+                        <td>
+                            <a href="https://cogo.co.kr/"> 링크 </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <footer>
+            <a
+                href="https://github.com/deblur99/Cogo-Gift-Crawler"
+                class="external-link"
+            >
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                    alt="github_logo"
+                />
+            </a>
+
+            <a href="https://cogo.co.kr/" class="external-link">
+                <img
+                    src="https://cogo.co.kr/static/img/logo.svg"
+                    alt="cogo_logo"
+                />
+            </a>
+        </footer>
+    </body>
+    <script src="index.js"></script>
+</html>
